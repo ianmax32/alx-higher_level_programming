@@ -49,7 +49,7 @@ class Square:
         """
         if self.__size == 0:
             print("")
-        
+ 
         for a in range(self.__size):
             for b in range(self.__size):
                 print("#", end="")
