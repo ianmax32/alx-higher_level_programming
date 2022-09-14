@@ -51,8 +51,8 @@ class Square:
 
     @position.setter
     def position(self, value):
-        """this method sets the value of the private field position to a certain
-        value
+        """this method sets the value of the private field position
+        to a certain value
         """
         if (value[0] < 0 or value[1] < 0 or not isinstance(value, tuple) or
                 len(value) is not 2 or not isinstance(value[0], int) or
@@ -66,10 +66,11 @@ class Square:
         character #
         """
         if self.__size == 0:
-            print("")
+            print()
             return
         for b in range(self.__position[1]):
             print("")
         for a in range(self.__size):
-            print("{}{}".format(self.__position[0] * " ",self.__size * "#"), end="")
-            print("")
+            print("{}{}".format(self.__position[0] * " ",
+                                self.__size * "#"), end="")
+            print()
