@@ -5,6 +5,7 @@ this is a module that has classes Node and
 SingilyLinkedList class
 """
 
+
 class Node:
     """
     this is the class node that defines
@@ -51,7 +52,9 @@ class Node:
     def __str__(self):
         return str(self.__data)
 
+
 """this class defines a singily linked list using a Node class"""
+
 
 class SinglyLinkedList:
     """this class represents a singlylinkedlist"""
