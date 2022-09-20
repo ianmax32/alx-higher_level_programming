@@ -7,6 +7,7 @@ class Rectangle:
     """this class defines a class called reactangle
     """
     number_of_instances = 0
+
     def __init__(self, width=0, height=0):
         """this method initialises the instance fields
             Args:
