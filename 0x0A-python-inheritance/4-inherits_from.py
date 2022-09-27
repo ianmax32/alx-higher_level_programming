@@ -15,7 +15,7 @@ def inherits_from(obj, a_class):
         a_class(class):class of the instance
     """
 
-    if not isinstance(obj, a_class) and type(obj) != a_class:
-        return False
-    else:
+    if isinstance(obj, a_class) and type(obj) != a_class:
         return True
+    else:
+        return False
