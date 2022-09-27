@@ -5,7 +5,7 @@ mylist class which inherists from list
 """
 
 
-class Mylist(list):
+class MyList(list):
     """this class inherits from
     the list class"""
 
