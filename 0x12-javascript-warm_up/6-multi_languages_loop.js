@@ -1,6 +1,6 @@
 #!/usr/bin/node
 
-const values = ['C is fun', 'Python is cool','Javascript is amazing'];
+const values = ['C is fun', 'Python is cool', 'JavaScript is amazing'];
 
 let a = 0;
 
