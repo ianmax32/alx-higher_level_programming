@@ -1,8 +1,8 @@
 #!/usr/bin/node
 
-if(parseInt(process.argv[2]))
+if (parseInt(process.argv[2]))
 {
-	for(let x = 0; x < process.argv[2]; x++)
+	for (let x = 0; x < process.argv[2]; x++)
 	{
 		console.log('C is fun');
 	}
