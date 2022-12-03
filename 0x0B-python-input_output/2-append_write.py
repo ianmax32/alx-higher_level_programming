@@ -5,7 +5,7 @@ returns the number of characters written
 """
 
 
-def write_file(filename="", text=""):
+def append_write(filename="", text=""):
     """this opens and writes to the file"""
     a = 0
     with open(filename, 'a') as wr_file:
