@@ -1,4 +1,5 @@
 #!/usr/bin/node
+// this script prints a message according to the number of arguments passed
 
 if (process.argv.length === 2)
 {
