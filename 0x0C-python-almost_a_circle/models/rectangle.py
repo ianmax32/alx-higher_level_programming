@@ -18,17 +18,3 @@ class Rectangle(Base):
         self.height = Rectangle.__height
         self.x = Rectangle.__x
         self.y = Rectangle.__y
-
-    @property
-    def width(self):
-        """get the private attribute"""
-        return self.__width
-
-    @width.setter
-    def width(self, value):
-        """setter method"""
-        if type(value) is not int:
-            raise TypeError("Width must be an integer")
-        if value <= 0:
-            raise ValueError("Width must be > 0")
-        self.__width = value
