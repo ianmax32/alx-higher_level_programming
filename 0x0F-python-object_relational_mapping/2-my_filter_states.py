@@ -13,7 +13,7 @@ if __name__ == "__main__":
                          user=sys.argv[1], passwd=sys.argv[2], db=sys.argv[3])
     cursor = db.cursor()
     cursor.execute('Select * from states where name like '
-                   '"' + sys.argv[4] + '" order by id asc')
+                   '"{}" order by id asc'.format(sys.argv[4]))
     for a in cursor.fetchall():
         print(a)
     cursor.close()
