@@ -10,18 +10,16 @@ import sys
 
 
 if __name__ == "__main__":
-    try:
-        value = ""
-        if sys.argv == 2:
+    value = ""
+    if len(sys.argv) == 2:
             value = sys.argv[1]
-            r = requests.post('http://0.0.0.0:5000/search_user',
-                             info={'q': value}).json()
-            r.raise_for_status()
-            if ('name' in r) and ('id' in r):
-                print('[{}] {}'.format(r['id'], r['name']))
-            else:
-                print('No result')
+    try:
+        r = requests.post('http://0.0.0.0:5000/search_user',
+                         info={'q': value}).json()
+        #r.raise_for_status()
+        if ('name' in r) and ('id' in r):
+            print('[{}] {}'.format(r['id'], r['name']))
         else:
-            print('Not a valid JSON')
+            print('No result')
     except:
-        print('Error code {}'.format(r.status_code))
+        print('Not a valid JSON')
